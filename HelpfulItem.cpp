@@ -1,6 +1,18 @@
 #include "HelpfulItem.h"
 
-void HelpfulItem::use(Character *character)
+#include "Utility.h"
+
+HelpfulItem::HelpfulItem() : Item("helpful item", 2)
+{ 
+
+}
+
+HelpfulItem::~HelpfulItem()
 {
     
+}
+
+void HelpfulItem::use(Character* character)
+{
+    useHelpfulItem(character, this);
 }

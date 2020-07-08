@@ -17,7 +17,7 @@ struct Character
      derived class stores the name, not the base class.
      */
     
-    virtual const std::string& getName() = 0;
+    virtual const std::string& getName() = 0; 
     virtual std::string getStats() = 0;
     
     virtual void attack( Character& other );
@@ -61,6 +61,7 @@ struct Character
         std::cout << std::endl;
         std::cout << std::endl;
     }
+
 protected:
     std::vector<std::unique_ptr<Item>> defensiveItems;
     std::vector<std::unique_ptr<Item>> helpfulItems;
