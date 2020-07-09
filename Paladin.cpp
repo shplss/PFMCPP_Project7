@@ -2,8 +2,8 @@
 
 #include "Utility.h"
 
-Paladin::Paladin(std::string name_, int hitPoints_, int armor_) : name(name_),
-                                                                  Character(hitPoints_, armor_, 10)
+Paladin::Paladin(std::string name_, int hitPoints_, int armor_) : Character(hitPoints_, armor_, 10),
+                                                                  name(name_)
 {
     helpfulItems = makeHelpfulItems(randomNumber());
     defensiveItems = makeDefensiveItems(randomNumber());
