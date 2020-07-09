@@ -62,6 +62,8 @@ struct Character
         std::cout << std::endl;
     }
 
+    void checkStats(int& current, int& inital);
+
 protected:
     std::vector<std::unique_ptr<Item>> defensiveItems;
     std::vector<std::unique_ptr<Item>> helpfulItems;

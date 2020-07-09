@@ -15,5 +15,5 @@ DefensiveItem::~DefensiveItem()
 void DefensiveItem::use(Character* character)
 {
     //make your defensive item use the appropriate Utility helper functions
-    useDefensiveItem(character, *character->getDefensiveItems().front());
+    useDefensiveItem(character, *this);
 }
